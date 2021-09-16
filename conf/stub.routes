@@ -1,0 +1,1 @@
+GET     /products    controllers.SearchProduct.searchProduct(price: Option[String], category: Option[String], name: Option[String])

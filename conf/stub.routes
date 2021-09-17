@@ -1,1 +1,3 @@
-GET     /products    controllers.SearchProduct.searchProduct(price: Option[String], category: Option[String], name: Option[String])
+GET     /product    controllers.SearchProduct.searchProduct(price: Option[String], category: Option[String], name: Option[String])
+
+GET     /product/:id    controllers.RetrieveProduct.retrieveProduct(id: String)

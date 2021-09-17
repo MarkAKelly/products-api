@@ -22,11 +22,11 @@ lazy val root = (project in file("."))
       "-Dpidfile.path=/dev/null"
     )
   )
-  .settings(PlayKeys.playDefaultPort := 9001)
+  .settings(PlayKeys.playDefaultPort := 9002)
 
 assemblyMergeStrategy in assembly := {
   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
   case x => MergeStrategy.first
 }
 
-dockerExposedPorts := Seq(9001)
+dockerExposedPorts := Seq(9002)

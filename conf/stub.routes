@@ -1,3 +1,4 @@
 GET     /product    controllers.SearchProduct.searchProduct(price: Option[String], category: Option[String], name: Option[String])
+POST    /product    controllers.CreateProduct.create()
 
 GET     /product/:id    controllers.RetrieveProduct.retrieveProduct(id: String)

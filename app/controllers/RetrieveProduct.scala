@@ -35,7 +35,7 @@ class RetrieveProduct @Inject()(cc: ControllerComponents) extends AbstractContro
 
       testHeaderFromRequest() match {
         case Some("NOT_FOUND") =>
-          NotFound(Json.toJson(ErrorResponse("User not found")))
+          NotFound(Json.toJson(ErrorResponse("A product could not be found with the information supplied")))
         case Some("FORBIDDEN") =>
           Forbidden(Json.toJson(ErrorResponse("User not authorised to access this resource")))
         case Some("SERVER_ERROR") =>
